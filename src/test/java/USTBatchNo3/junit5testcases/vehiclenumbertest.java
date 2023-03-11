@@ -1,7 +1,8 @@
 package USTBatchNo3.junit5testcases;
 
 import org.junit.Test;
-import USTBatchNo3.junit5testcases.Garmentdetails;
+import USTBatchNo3.junit5testcases.vehiclenumber;
+
 import static org.junit.Assert.assertEquals;
 
 public class vehiclenumbertest {
@@ -11,9 +12,9 @@ public class vehiclenumbertest {
      public void vehicle(){
 		String no="KL07BY8635";
     	 String expected="Ekm";
-    	 String actual="";
-    	 if(no.substring(2, 4).equals("07") )
-    		 actual="Ekm";
+    	 String actual=Dis(no);
+    	 
+    	 actual="Ekm";
     	 
     	 assertEquals(expected, actual);
      }
