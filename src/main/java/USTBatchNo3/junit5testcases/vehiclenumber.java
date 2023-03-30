@@ -21,8 +21,9 @@ public class vehiclenumber {
 		List<String> distritsKerala=Arrays.asList("07-Ernakulam","02-Kollam","03-Pathanamtitta","43-Kochi","08-Thrissur","01-Tvm");
 		List<String> distritsTamilNadu=Arrays.asList("07-Thirupathy","09-Nagaroil","67-Chennai");
 		String d=n.substring(2, 4);
-		String value="";
+		List<String> value=null;
 		List<String> district = null;
+		
 		if(n.substring(0,2).equals("KL")) {
 		district=distritsKerala.stream().filter(t->t.substring(0,2).equals(d)).toList();}
 		if(n.substring(0,2).equals("TN")) {
